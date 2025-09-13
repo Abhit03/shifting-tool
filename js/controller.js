@@ -261,7 +261,7 @@ function addListItem(ppNumber) {
             document.getElementById('max').style.display = "none";
             document.getElementById('addps-submit').style.display = "none";
             document.getElementById('addps-button').style.display = "block";
-            $("#added").append('<tr id=ps-list-item-'+ ppNumber + '><td>' + $("#pp-1-name").val() + '</td><td>' + $("#pp-1-cost").val() + '</td><td>' + $("#pp-1-co2").val()  +'</td><td><a href="javascript:%20deletePowerSource(%22powerPlant'+ ppNumber +'%22);"><img src="images/deleteButton.png"></a></td></tr>');
+            $("#added").append('<tr id=ps-list-item-'+ ppNumber + '><td>' + $("#pp-1-name").val() + '</td><td>' + $("#pp-1-cost").val() + '</td><td>' + $("#pp-1-co2").val()  +'</td><td><a href="javascript:%20deletePowerSource(%22powerPlant'+ ppNumber +'%22);"><img src="./images/deleteButton.png"></a></td></tr>');
             $("#new-ps").html('<tr><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr><tr><td><input type="text" id="pp-1-name" placeholder="New Power Plant Name" class="pp-name"></td><td><input type="text" id="pp-1-cost" placeholder="Cost" class="pp-cost"></td><td><input type="text" id="pp-1-co2" placeholder="CO2" class="pp-co2"></td></tr>');
             $("#color-legend tbody tr.data").remove();
             sharedElectricData.updateVariableArray();
@@ -279,7 +279,7 @@ function addPreloadedListItem() {
             for (var powerplant in shifting.powerPlants) {
                 var pp = powerplant;
                 if(pp.slice(-1) != 0) {
-                    $("#added").append('<tr id=ps-list-item-' + pp.slice(-1) + '><td> ' + shifting.powerPlants[pp].name + '</td><td> ' + shifting.powerPlants[pp].cost.fuel + '</td><td>' + shifting.powerPlants[pp].cost.co2  +'</td><td><a href="javascript:%20deletePowerSource(%22'+pp+'%22);"><img src="images/deleteButton.png"></a></td></tr>');
+                    $("#added").append('<tr id=ps-list-item-' + pp.slice(-1) + '><td> ' + shifting.powerPlants[pp].name + '</td><td> ' + shifting.powerPlants[pp].cost.fuel + '</td><td>' + shifting.powerPlants[pp].cost.co2  +'</td><td><a href="javascript:%20deletePowerSource(%22'+pp+'%22);"><img src="./images/deleteButton.png"></a></td></tr>');
                 }
             }
 

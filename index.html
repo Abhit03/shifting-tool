@@ -5,19 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- menu.html -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <!-- 3rd party libraries -->
-  <script src="js/lib/d3.v3.js" charset="utf-8"></script>
-  <script src="js/lib/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="./js/lib/d3.v3.js" charset="utf-8"></script>
+  <script src="./js/lib/jquery-latest.min.js" type="text/javascript"></script>
   <!-- app code --> 
-  <script src="js/data.js"></script><!-- data.js must be loaded first. optimize.js and optimaltimestep.js depend on it -->
-  <script src="js/plot.js"></script>
-  <script src="js/optimaltimestep.js"></script>
-  <script src="js/optimize.js"></script>
-  <script src="js/controller.js"></script>
+  <script src="./js/data.js"></script><!-- data.js must be loaded first. optimize.js and optimaltimestep.js depend on it -->
+  <script src="./js/plot.js"></script>
+  <script src="./js/optimaltimestep.js"></script>
+  <script src="./js/optimize.js"></script>
+  <script src="./js/controller.js"></script>
   <!-- menu.html -->
   <!-- calc.html -->
-  <link rel="stylesheet" href="css/calc.css">
+  <link rel="stylesheet" href="./css/calc.css">
   <!-- calc.html -->
   <!-- enter-data.html -->
   <!-- enter-data.html -->
@@ -207,7 +207,7 @@ updatePowerPlantLegend();
      <div id="popupContact">
       <form action="#" id="form" method="post" name="form">
        <h2>Enter Data</h2>
-       <img id="close" src="images/3.png" onclick ="close_dataform('enter-data')">
+       <img id="close" src="./images/3.png" onclick ="close_dataform('enter-data')">
        <div id="container" width="600px;">
 
         <div id="load-profile">
@@ -317,7 +317,7 @@ updatePowerPlantLegend();
    <div id="popupContact">
      <form action="#" id="form" method="post" name="form">
        <h2>Add Power Source</h2>
-       <img id="close" src="images/3.png" onclick ="close_dataform('addps')">
+       <img id="close" src="./images/3.png" onclick ="close_dataform('addps')">
         <div id="container" width="600px;">
           <div id="power-plant-list">
             <a href="javascript:%20deleteAllPowerSources();" style="float: right;">Delete All</a><br><br>
@@ -437,7 +437,7 @@ updatePowerPlantLegend();
     <div id="popupContact">
       <form action="#" id="form" method="post" name="form">
       <h2>About this Calculator</h2>
-      <img id="close" src="images/3.png" onclick ="close_dataform('about')">
+      <img id="close" src="./images/3.png" onclick ="close_dataform('about')">
         <div id="container" width="600px;">
 
           <p>This calculator is made by Shared Electric to explore the power of load shifting.</p>  

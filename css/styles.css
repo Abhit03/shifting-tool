@@ -78,7 +78,7 @@ CSS settings for Menu Bar
     vertical-align: bottom;
     position: relative;
     top: -1px;
-    *overflow: hidden;
+    overflow: hidden;
 }
 
 
@@ -152,10 +152,10 @@ border-top:1px solid #ccc
 }
 #enter-data input[type=text], #addps input[type=text] {
 width:50%;
-// padding:10px;
-// margin-top:30px;
+/* padding:10px; */
+/* margin-top:30px; */
 border:1px solid #ccc;
-// padding-left:10px;
+/* padding-left:10px; */
 font-size:14px;
 font-family:Trebuchet MS;
 margin-left: 16px;
